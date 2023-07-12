@@ -49,7 +49,7 @@ nav li a:hover {
     background-color: #555;
 }
 
-.mainimage  {
+.mainimage {
     text-align: center;
 }
 
@@ -65,16 +65,13 @@ h2 {
 }
 
 /* Style the main section */
-
-
 .product-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     justify-items: center;
-    background-color:#333333ce;
+    background-color: #333333ce;
     padding-top: 2%;
-    
 }
 
 .product {
@@ -87,6 +84,11 @@ h2 {
 .product img {
     width: 100%;
     height: auto;
+    transition: opacity 0.3s ease; /* Added transition for opacity */
+}
+
+.product img:hover {
+    opacity: 0.8; /* Opacity change on hover */
 }
 
 .product h3 {
@@ -98,12 +100,13 @@ h2 {
     font-size: 1.2rem;
     margin-top: 0.5rem;
 }
+
 .product-container a {
     text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit the color from the parent */
+    color: inherit; /* Inherit the color  */
 }
 
-/* Style the footer */
+/*  the footer style */
 footer {
     background-color: #333;
     padding: 2%;
@@ -118,7 +121,7 @@ footer p {
 
 .button-container {
     display: flex;
-    justify-content:end;
+    justify-content: flex-end;
     margin-top: 1rem;
 }
 
@@ -128,76 +131,63 @@ footer p {
     border: none;
     margin-right: 1rem;
     cursor: pointer;
-    
-}
-
-.button-container button:hover {
-    background-color: #555;
 }
 
 .button-container a {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem;
-  font-size: 2rem;
-  
-  
+    font-size: 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for background-color and color */
 }
 
-
-
-
-
+.button-container a:hover {
+    background-color: #555;
+    color: #00ff00; /* Example color change on hover */
+}
 
 /* CONTACT PAGE */
 .contactimage {
     text-align: center;
-    
 }
 
 .contactimage img {
     width: 100%;
     height: auto;
 }
+
 .container-contact {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    font-size:2rem;
-    flex-wrap:wrap;
+    font-size: 2rem;
+    flex-wrap: wrap;
     background-color: #333333ce;
     padding: 2rem;
-    
+}
 
-  }
-  .content-contact {
+.content-contact {
     width: 50%;
     float: left;
-  }
+}
 
-
-
-  .map-contact {
+.map-contact {
     width: 50%;
-    height:auto;
+    height: auto;
     float: right;
-    margin-top: 2REM;
+    margin-top: 2rem;
+}
 
-    
-  }
-  .location2{
+.location2 {
     background-color: #333333ce;
     margin-bottom: 0%;
-   
     margin-top: 0%;
     padding-top: 2rem;
-  }
+}
 
-
-
-   
-  
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 1rem;
     border: 0.2rem solid #ccc;
@@ -206,86 +196,95 @@ input, select, textarea {
     margin-top: 1rem;
     margin-bottom: 1rem;
     resize: vertical;
-  }
-  
-  input[type=submit] {
+}
+
+input[type="submit"] {
     background-color: #1a1a25;
     color: white;
     padding: 1% 3%;
     border: none;
     border-radius: 3%;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type="submit"]:hover {
     background-color: #121713;
-  }
-  
-  .container-form {
+}
+
+.container-form {
     border-radius: 1rem;
     background-color: #f2f2f2;
     padding: 4%;
     text-align: left;
     padding-left: 10%;
-    padding-right:10% ;
-   margin: 5%;
-  }
+    padding-right: 10%;
+    margin: 5%;
+}
 
-
-
-
-  .founder {
+.founder {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    font-size:2rem;
-    flex-wrap:wrap;
+    font-size: 2rem;
+    flex-wrap: wrap;
     background-color: #333333ce;
     padding: 2rem;
-    
-    
+}
 
-  }
-  .content-about {
+.content-about {
     width: 50%;
     float: right;
+}
 
-  }
-
-
-
-  .image-founder {
+.image-founder {
     width: 50%;
-    height:auto;
+    height: auto;
     float: left;
-    margin-top: 2REM;
+    margin-top: 2rem;
+}
 
-  }
-  .image-founder img {
+.image-founder img {
     width: 100%;
     height: auto;
 }
-.wrapper-about{
+
+.wrapper-about {
     text-align: center;
 }
-.about-last{
+
+.about-last {
     width: 50%;
-    height:auto;
+    height: auto;
     float: left;
-    margin-top: 2REM;
+    margin-top: 2rem;
 }
-.about-last{
+
+.about-last {
     width: 100%;
     height: auto;
 }
 
+/* Media Queries for Responsive Design */
 
+@media only screen and (max-width: 768px) {
+    /*  font size of nav items */
+    nav li a {
+        font-size: 3vw;
+    }
 
- 
-  
- 
-  
+    /*  grid layout for product container */
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    /*  font size for headings */
+    h2 {
+        font-size: 1.5rem;
+    }
 
+    /*  width of contact form and map */
+    .container-contact {
+        flex-direction: column;
+    }
 
-
+}
