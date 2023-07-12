@@ -197,7 +197,7 @@ footer p {
 
    
   
-input[type=text], select, textarea {
+input, select, textarea {
     width: 100%;
     padding: 1rem;
     border: 0.2rem solid #ccc;

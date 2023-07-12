@@ -16,62 +16,51 @@
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
-                    
                 </ul>
             </nav>
         </header>
         
         <main>
-             <div class="contactimage">
-                    <img src="images/pexels-negative-space-33999.jpg" alt="">
+            <div class="contactimage">
+                <img src="images/pexels-negative-space-33999.jpg" alt="contact">
+            </div>
+            <h2 class="location2">Location</h2>
+        
+            <div class="container-contact">
+                <div class="content-contact">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis augue ac nisl tincidunt, vel cursus nulla posuere. In semper tellus sed nunc volutpat convallis. Curabitur convallis pellentesque metus. Suspendisse interdum lorem id nisl viverra congue. In vel turpis odio. Sed suscipit neque vitae congue aliquam.</p>
+                    <p>Morbi eu purus et nulla tristique ultrices. Suspendisse a velit sit amet mauris luctus interdum. Aliquam ac risus et nisl finibus aliquet eu eu metus. Nulla egestas finibus arcu, id eleifend sem feugiat sed. Vestibulum rutrum nibh et tincidunt commodo. Duis euismod tempor augue, ut laoreet felis mollis sed. Aliquam consequat, libero vitae lacinia pellentesque, est ex convallis mauris, ac vulputate lectus neque a arcu.</p>
                 </div>
-                <h2 class="location2">Location</h2>
-            
-                <div class="container-contact">
-                    <div class="content-contact">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis augue ac nisl tincidunt, vel cursus nulla posuere. In semper tellus sed nunc volutpat convallis. Curabitur convallis pellentesque metus. Suspendisse interdum lorem id nisl viverra congue. In vel turpis odio. Sed suscipit neque vitae congue aliquam.</p>
-                        <p>Morbi eu purus et nulla tristique ultrices. Suspendisse a velit sit amet mauris luctus interdum. Aliquam ac risus et nisl finibus aliquet eu eu metus. Nulla egestas finibus arcu, id eleifend sem feugiat sed. Vestibulum rutrum nibh et tincidunt commodo. Duis euismod tempor augue, ut laoreet felis mollis sed. Aliquam consequat, libero vitae lacinia pellentesque, est ex convallis mauris, ac vulputate lectus neque a arcu.</p>
-                    </div>
-                    <div class="map-contact">
-                        
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89726.2225650227!2d-75.90736100273438!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1689126081393!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="container-form">
-                        <h2>CONTACT US</h2>
-                        <form action="/action_page.php">
-                          <label for="fname">NAME</label>
-                          <input type="text" id="name" name="name" placeholder="Your name..">
-                      
-                          <label for="Email">EMAIL</label>
-                          <input type="text" id="email" name="email" placeholder="Your Email..">
-                      
-                          
-                          <label for="DESCRIPTION">DESCRIPTION</label>
-                          <textarea id="description" name="description" placeholder="what would you like help with today" style="height:100"></textarea>
-                      
-                          <input type="submit" value="Submit">
-                        </form>
-                      </div>
-              </div>
-            
-             
+
+                <div class="map-contact"><!-- Map section -->
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89726.2225650227!2d-75.90736100273438!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1689126081393!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="container-form"><!-- Contact form section -->
+                    <h2>CONTACT US</h2>
+                    <form >
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" name="name" placeholder="Your name.." required>
+                    
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email.." required>
+                    
+                        <label for="description">DESCRIPTION</label>
+                        <textarea id="text" name="description" placeholder="What would you like help with today" style="height:100px" required></textarea>
+                    
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
         </main>
         
         <footer>
             <p>FOLLOW US</p>
             <div class="button-container">
-                <button>
-                    <a href="https://facebook.com" class="fa fa-facebook"></a>
-                </button>
-                <button>
-                    <a href="https://twitter.com" class="fa fa-twitter"></a>
-                </button>
-                <button>
-                    <a href="https://instagram.com" class="fa fa-instagram"></a>
-                </button>
-                <button>
-                    <a href="https://snapchat.com" class="fa fa-snapchat"></a>
-                </button>
+                <a href="https://facebook.com" class="fa fa-facebook" aria-label="Facebook" target="_blank"></a>
+                <a href="https://twitter.com" class="fa fa-twitter" aria-label="Twitter" target="_blank"></a>
+                <a href="https://instagram.com" class="fa fa-instagram" aria-label="Instagram" target="_blank"></a>
+                <a href="https://snapchat.com" class="fa fa-snapchat" aria-label="Snapchat" target="_blank"></a>
             </div>
         </footer>
     </div>
